@@ -2,7 +2,7 @@
 <?php echo $navbar?>
 <div class="card">
         <div class="card-body">
-                <h5 class="card-title">Accede a tu cuenta</h5>
+                <h5 class="card-title">Accede a tu Nueva cuenta</h5>
                 <p class="card-text">
                 
                 <?php if(session()->getFlashdata('msg')):?>
