@@ -1,0 +1,331 @@
+CRITICAL - 2022-10-07 00:39:17 --> Undefined variable $info
+in APPPATH\Views\main.php on line 3.
+ 1 APPPATH\Views\main.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'APPPATH\\Views\\main.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\Equipos.php(54): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 00:47:06 --> Undefined variable $info
+in APPPATH\Views\main.php on line 3.
+ 1 APPPATH\Views\main.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'APPPATH\\Views\\main.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(19): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Usuarios->listarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 00:48:01 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Usuarios.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 00:54:24 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Rams.php on line 66.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Rams.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Rams')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Rams')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Rams', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 00:55:51 --> Undefined constant "App\Controllers\session"
+in APPPATH\Controllers\Rams.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->borrarRam('53')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 15:41:40 --> Undefined array key "modelo_ram"
+in APPPATH\Views\equipos\crearEquipo.php on line 20.
+ 1 APPPATH\Views\equipos\crearEquipo.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "modelo_ram"', 'APPPATH\\Views\\equipos\\crearEquipo.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\equipos\\crearEquipo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('equipos/crearEquipo', [], true)
+ 5 APPPATH\Controllers\Equipos.php(52): view('equipos/crearEquipo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 15:58:10 --> Undefined array key "mhz_ram"
+in APPPATH\Views\equipos\crearEquipo.php on line 20.
+ 1 APPPATH\Views\equipos\crearEquipo.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mhz_ram"', 'APPPATH\\Views\\equipos\\crearEquipo.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\equipos\\crearEquipo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('equipos/crearEquipo', [], true)
+ 5 APPPATH\Controllers\Equipos.php(52): view('equipos/crearEquipo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-07 16:05:19 --> mysqli_sql_exception: Column 'cod_pro' cannot be null in C:\xampp\htdocs\comparador2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\comparador2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `EQ...', 0)
+#1 C:\xampp\htdocs\comparador2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `EQ...')
+#2 C:\xampp\htdocs\comparador2\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `EQ...')
+#3 C:\xampp\htdocs\comparador2\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `EQ...', Array, false)
+#4 C:\xampp\htdocs\comparador2\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\comparador2\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\comparador2\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\comparador2\app\Controllers\Equipos.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\comparador2\system\CodeIgniter.php(904): App\Controllers\Equipos->guardarEquipo()
+#9 C:\xampp\htdocs\comparador2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+#10 C:\xampp\htdocs\comparador2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\comparador2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-10-07 16:05:54 --> mysqli_sql_exception: Column 'cod_pro' cannot be null in C:\xampp\htdocs\comparador2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\comparador2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `EQ...', 0)
+#1 C:\xampp\htdocs\comparador2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `EQ...')
+#2 C:\xampp\htdocs\comparador2\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `EQ...')
+#3 C:\xampp\htdocs\comparador2\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `EQ...', Array, false)
+#4 C:\xampp\htdocs\comparador2\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\comparador2\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\comparador2\system\Model.php(666): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\comparador2\app\Controllers\Equipos.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\comparador2\system\CodeIgniter.php(904): App\Controllers\Equipos->guardarEquipo()
+#9 C:\xampp\htdocs\comparador2\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+#10 C:\xampp\htdocs\comparador2\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\comparador2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-07 16:46:19 --> Undefined variable $validation
+in APPPATH\Views\rams\crearRam.php on line 5.
+ 1 APPPATH\Views\rams\crearRam.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\rams\\crearRam.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\rams\\crearRam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('rams/crearRam', [], true)
+ 5 APPPATH\Controllers\Rams.php(35): view('rams/crearRam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->crearRam()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 19:14:17 --> Invalid file: crearRam.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('crearRam.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('crearRam', [], true)
+ 3 APPPATH\Controllers\Rams.php(63): view('crearRam', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->guardarRam()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 19:15:33 --> Invalid file: crearRam.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('crearRam.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('crearRam', [], true)
+ 3 APPPATH\Controllers\Rams.php(63): view('crearRam', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->guardarRam()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 19:24:40 --> Invalid file: crearRam.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('crearRam.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('crearRam', [], true)
+ 3 APPPATH\Controllers\Rams.php(63): view('crearRam', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->guardarRam()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 20:15:38 --> Undefined variable $cabecera
+in APPPATH\Views\rams\crearRam.php on line 1.
+ 1 APPPATH\Views\rams\crearRam.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\rams\\crearRam.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\rams\\crearRam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('rams/crearRam', [], true)
+ 5 APPPATH\Controllers\Rams.php(28): view('rams/crearRam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->indexx()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 20:18:42 --> Undefined variable $info
+in APPPATH\Views\main.php on line 3.
+ 1 APPPATH\Views\main.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'APPPATH\\Views\\main.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\Rams.php(31): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->indexx()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 20:22:15 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Rams.php on line 34.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Rams.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Rams')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Rams')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Rams', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 20:24:54 --> Undefined variable $cabecera
+in APPPATH\Views\rams\listarRams.php on line 1.
+ 1 APPPATH\Views\rams\listarRams.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\rams\\listarRams.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\rams\\listarRams.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('rams/listarRams', [], true)
+ 5 APPPATH\Controllers\Rams.php(33): view('rams/listarRams', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->indexx()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 20:26:09 --> Undefined variable $rams
+in APPPATH\Views\rams\listarRams.php on line 17.
+ 1 APPPATH\Views\rams\listarRams.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rams', 'APPPATH\\Views\\rams\\listarRams.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\rams\\listarRams.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('rams/listarRams', [], true)
+ 5 APPPATH\Controllers\Rams.php(33): view('rams/listarRams', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->indexx()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 20:27:05 --> Undefined variable $cabecera
+in APPPATH\Views\rams\listarRams.php on line 1.
+ 1 APPPATH\Views\rams\listarRams.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\rams\\listarRams.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\rams\\listarRams.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('rams/listarRams', [], true)
+ 5 APPPATH\Controllers\Rams.php(33): view('rams/listarRams', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->indexx()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 20:28:03 --> Undefined variable $rams
+in APPPATH\Views\rams\listarRams.php on line 17.
+ 1 APPPATH\Views\rams\listarRams.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rams', 'APPPATH\\Views\\rams\\listarRams.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\rams\\listarRams.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('rams/listarRams', [], true)
+ 5 APPPATH\Controllers\Rams.php(33): view('rams/listarRams', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->indexx()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 20:52:41 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Helpers\Form_helper.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-07 20:54:37 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Helpers\Form_helper.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-07 20:54:48 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Helpers\Form_helper.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-07 20:55:43 --> Undefined variable $validation
+in APPPATH\Views\rams\crearRam.php on line 19.
+ 1 APPPATH\Views\rams\crearRam.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\rams\\crearRam.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\rams\\crearRam.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('rams/crearRam', [], true)
+ 5 APPPATH\Controllers\Rams.php(69): view('rams/crearRam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->crearRam()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 22:00:20 --> mmow}m{{_space is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 316.
+ 1 SYSTEMPATH\Validation\Validation.php(316): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('mmow}m{{_space')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('compania_ram', 'compania_ram', 'ROOTPATH\\public', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Rams.php(32): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Rams->guardarRam()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rams))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 22:00:40 --> syntax error, unexpected variable "$errors", expecting "function" or "const"
+in APPPATH\Models\Ram.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Ram.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Ram')
+ 3 APPPATH\Controllers\Equipos.php(49): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Ram')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 22:00:57 --> syntax error, unexpected variable "$errors", expecting "function" or "const"
+in APPPATH\Models\Ram.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Ram.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Ram')
+ 3 APPPATH\Controllers\Equipos.php(49): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Ram')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 22:00:58 --> syntax error, unexpected variable "$errors", expecting "function" or "const"
+in APPPATH\Models\Ram.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Ram.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Ram')
+ 3 APPPATH\Controllers\Equipos.php(49): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Ram')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 22:01:47 --> syntax error, unexpected variable "$errors", expecting "function" or "const"
+in APPPATH\Models\Ram.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Ram.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Ram')
+ 3 APPPATH\Controllers\Equipos.php(49): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Ram')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 22:01:48 --> syntax error, unexpected variable "$errors", expecting "function" or "const"
+in APPPATH\Models\Ram.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Ram.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Ram')
+ 3 APPPATH\Controllers\Equipos.php(49): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Ram')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 22:01:49 --> syntax error, unexpected variable "$errors", expecting "function" or "const"
+in APPPATH\Models\Ram.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Ram.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Ram')
+ 3 APPPATH\Controllers\Equipos.php(49): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Ram')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 22:04:19 --> syntax error, unexpected variable "$errors", expecting "function" or "const"
+in APPPATH\Models\Ram.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Ram.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Ram')
+ 3 APPPATH\Controllers\Equipos.php(49): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Ram')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 22:22:54 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Rams.php on line 47.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Rams.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Rams')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Rams')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Rams', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 22:29:06 --> syntax error, unexpected variable "$errors", expecting "function" or "const"
+in APPPATH\Models\Ram.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Ram.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Ram')
+ 3 APPPATH\Controllers\Equipos.php(49): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Ram')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 22:44:00 --> syntax error, unexpected variable "$errors", expecting "function" or "const"
+in APPPATH\Models\Ram.php on line 24.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Ram.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Ram')
+ 3 APPPATH\Controllers\Equipos.php(49): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Ram')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

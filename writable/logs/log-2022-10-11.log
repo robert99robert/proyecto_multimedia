@@ -1,0 +1,25 @@
+CRITICAL - 2022-10-11 19:03:38 --> Undefined variable $navbar2
+in APPPATH\Views\main.php on line 3.
+ 1 APPPATH\Views\main.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar2', 'APPPATH\\Views\\main.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(20): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Usuarios->listarUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 19:12:54 --> Undefined variable $datos
+in APPPATH\Controllers\Procesadores.php on line 95.
+ 1 APPPATH\Controllers\Procesadores.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'APPPATH\\Controllers\\Procesadores.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Procesadores->guardarProcesador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Procesadores))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 19:14:25 --> Undefined variable $datos
+in APPPATH\Controllers\Procesadores.php on line 95.
+ 1 APPPATH\Controllers\Procesadores.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'APPPATH\\Controllers\\Procesadores.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Procesadores->guardarProcesador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Procesadores))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
