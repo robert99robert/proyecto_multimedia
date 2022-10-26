@@ -59,8 +59,9 @@ $routes->get('crearRam', 'Rams::crearRam');
 $routes->post('guardarRam', 'Rams::guardarRam');
 //$routes->post('indexx', 'Rams::indexx');
 //$routes->match(['get', 'post'], 'Rams/guardarRam', 'Rams::guardarRam');
-
+$routes->get('editarRam/(:num)','Rams::editarRam/$1');
 $routes->get('borrarRam/(:num)', 'Rams::borrarRam/$1');
+$routes->post('actualizarRam', 'Rams::actualizarRam');
 
 //$routes->get('main', 'Rams::index');
 $routes->get('listarProcesadores', 'Procesadores::listarProcesadores');
@@ -87,3 +88,8 @@ $routes->match(['get', 'post'], 'IniciadorSesiones/loginAuth', 'IniciadorSesione
 $routes->get('/inicioSesion', 'IniciadorSesiones::index');
 $routes->get('/perfil', 'Perfil::index',['filter' => 'authGuard']);
 $routes->match(['get','post'],'CerradorSesiones/cierreSesion','CerradorSesiones::cierreSesion');//la función cierreSesion() utiliza una entrada de datos, además de desplegar una vista; por tanto debe utilizar el método get y post.
+
+$routes->get('listarJuegos', 'Juegos::listarJuegos');
+$routes->get('borrarJuego/(:num)', 'Juegos::borrarJuego/$1');
+$routes->get('crearJuego', 'Juegos::crearJuego');
+$routes->post('guardarJuego', 'Juegos::guardarJuego');

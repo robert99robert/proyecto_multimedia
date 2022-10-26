@@ -1,34 +1,30 @@
 <?php echo $cabecera?>
-<?php echo $navbar?>
-
-  <h5>Lista de Equipos</h5>      
-      <table class="table table-light">
-        <thead class="thead-light">
-          <tr>
-            <th>Código del Equipo</th>
-            <th>Valor</th>
-            <th>Código de la R.A.M.</th>
-            <th>Código del Procesador</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-
-        <?php foreach($equipos as $equipo): ?>
-          <tr>
-            <td><?php echo $equipo['cod_equip']?></td>
-            <td><?php echo $equipo['valor']?></td>
-            <td><?php echo $equipo['cod_ram']?></td>
-            <td><?php echo $equipo['cod_pro']?></td>
-            <td>Editar
-
-              <a href="<?=base_url('borrarEquipo/'.$equipo['cod_equip']);?>"class="btn btn-danger" type="button">Borrar</a>
-
-            </td>
-          </tr>
-
-        <?php endforeach;?>
-
-        </tbody>
-      </table>
+<?php echo $navbar?> 
+    <div class="container" style="background-color: white;">
+      <h5 style="background-color: white">Lista de Equipos</h5>
+      <div class="row">
+        <table id="serverSideTable" class="dataTable display cell-border compact hover ">
+          <thead class="thead-light">
+            <tr>
+              <th>Cod. Equipo</th>
+              <th>Cod. R.A.M.</th>
+              <th>Cod. Procesador</th>
+              <th>ID</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+<script>
+  $(document).ready(function(){
+    $('#serverSideTable').DataTable( {
+      "processing":true,
+      "serverSide":true,
+      "ajax":"./php/server_processing_equipo.php",
+      language:{
+        url:'./Spanish.json'
+      }
+    });
+  });
+</script>
 <?php echo $piepagina?>

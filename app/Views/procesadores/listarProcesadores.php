@@ -1,37 +1,31 @@
 <?php echo $cabecera?>
-<?php echo $navbar?>
-
-<h5>Lista de Procesadores</h5>
-      
-      <table class="table table-light">
-        <thead class="thead-light">
-          <tr>
-            <th>Cod</th>
-            <th>Modelo</th>
-            <th>Cantidad de Nucleos</th>
-            <th>Ghz</th>
-            <th>Compañia</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-
-        <?php foreach($procesadores as $procesador): ?>
-          <tr>
-            <td><?php echo $procesador['cod_pro']?></td>
-            <td><?php echo $procesador['modelo_pro']?></td>
-            <td><?php echo $procesador['cant_nucleo']?></td>
-            <td><?php echo $procesador['ghz']?></td>
-            <td><?php echo $procesador['compania_pro']?></td>
-            <td>Editar
-
-              <a href="<?=base_url('borrarProcesador/'.$procesador['cod_pro']);?>"class="btn btn-danger" type="button">Borrar</a>
-
-            </td>
-          </tr>
-
-        <?php endforeach;?>
-
-        </tbody>
-      </table>
+<?php echo $navbar?> 
+    <div class="container" style="background-color: white;">
+      <h5 style="background-color: white">Lista de Procesadores</h5>
+      <div class="row">
+        <table id="serverSideTable" class="dataTable display cell-border compact hover ">
+          <thead class="thead-light">
+            <tr>
+              <th>Compañia</th>
+              <th>Modelo</th>
+              <th>Cantidad de Nucleos</th>
+              <th>Ghz</th>
+              <th>Código</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <script>
+  $(document).ready(function(){
+    $('#serverSideTable').DataTable( {
+      "processing":true,
+      "serverSide":true,
+      "ajax":"./php/server_processing_procesador.php",
+      language:{
+        url:'./Spanish.json'
+      }
+    });
+  });
+</script>
 <?php echo $piepagina?>

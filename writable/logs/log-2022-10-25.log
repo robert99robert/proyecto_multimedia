@@ -1,0 +1,123 @@
+CRITICAL - 2022-10-25 14:30:07 --> Undefined variable $cabecera
+in APPPATH\Views\juegos\listarJuegos.php on line 1.
+ 1 APPPATH\Views\juegos\listarJuegos.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\juegos\\listarJuegos.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\juegos\\listarJuegos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('juegos/listarJuegos', [], true)
+ 5 APPPATH\Controllers\Juegos.php(42): view('juegos/listarJuegos')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Juegos->guardarJuego()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Juegos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:39:35 --> Undefined variable $cabecera
+in APPPATH\Views\procesadores\listarProcesadores.php on line 1.
+ 1 APPPATH\Views\procesadores\listarProcesadores.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\procesadores\\listarProcesadores.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\procesadores\\listarProcesadores.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('procesadores/listarProcesadores', [], true)
+ 5 APPPATH\Controllers\Procesadores.php(104): view('procesadores/listarProcesadores')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Procesadores->guardarProcesador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Procesadores))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:44:12 --> Call to undefined function App\Controllers\listarProcesadores()
+in APPPATH\Controllers\Procesadores.php on line 96.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Procesadores->guardarProcesador()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Procesadores))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:45:01 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Procesadores.php on line 97.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Procesadores.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Procesadores')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Procesadores')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Procesadores', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:45:13 --> Invalid file: /listarProcesadores.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/listarProcesadores.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('/listarProcesadores', [], true)
+ 3 APPPATH\Controllers\Procesadores.php(96): view('/listarProcesadores')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Procesadores->guardarProcesador()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Procesadores))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:45:34 --> Undefined variable $cabecera
+in APPPATH\Views\procesadores\listarProcesadores.php on line 1.
+ 1 APPPATH\Views\procesadores\listarProcesadores.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\procesadores\\listarProcesadores.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\procesadores\\listarProcesadores.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('procesadores/listarProcesadores', [], true)
+ 5 APPPATH\Controllers\Procesadores.php(96): view('procesadores/listarProcesadores')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Procesadores->guardarProcesador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Procesadores))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:47:11 --> Undefined variable $cabecera
+in APPPATH\Views\procesadores\listarProcesadores.php on line 1.
+ 1 APPPATH\Views\procesadores\listarProcesadores.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\procesadores\\listarProcesadores.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\procesadores\\listarProcesadores.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('procesadores/listarProcesadores', [], true)
+ 5 APPPATH\Controllers\Procesadores.php(96): view('procesadores/listarProcesadores', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Procesadores->guardarProcesador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Procesadores))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 18:07:45 --> Undefined variable $cabecera
+in APPPATH\Views\equipos\listarEquipos.php on line 1.
+ 1 APPPATH\Views\equipos\listarEquipos.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\equipos\\listarEquipos.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\equipos\\listarEquipos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('equipos/listarEquipos', [], true)
+ 5 APPPATH\Controllers\Equipos.php(20): view('equipos/listarEquipos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->listarEquipos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 18:21:06 --> Undefined variable $info
+in APPPATH\Views\main.php on line 4.
+ 1 APPPATH\Views\main.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'APPPATH\\Views\\main.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\Procesadores.php(17): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Procesadores->listarProcesadores()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Procesadores))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 19:23:08 --> Undefined variable $juego
+in APPPATH\Views\juegos\listarJuegos.php on line 30.
+ 1 APPPATH\Views\juegos\listarJuegos.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $juego', 'APPPATH\\Views\\juegos\\listarJuegos.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\juegos\\listarJuegos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('juegos/listarJuegos', [], true)
+ 5 APPPATH\Controllers\Juegos.php(54): view('juegos/listarJuegos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Juegos->listarJuegos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Juegos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 19:25:55 --> Undefined variable $cabecera
+in APPPATH\Views\procesadores\crearProcesador.php on line 1.
+ 1 APPPATH\Views\procesadores\crearProcesador.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\procesadores\\crearProcesador.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\procesadores\\crearProcesador.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('procesadores/crearProcesador', [], true)
+ 5 APPPATH\Controllers\Procesadores.php(94): view('procesadores/crearProcesador', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Procesadores->guardarProcesador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Procesadores))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 19:26:11 --> Undefined variable $cabecera
+in APPPATH\Views\procesadores\crearProcesador.php on line 1.
+ 1 APPPATH\Views\procesadores\crearProcesador.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\procesadores\\crearProcesador.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\procesadores\\crearProcesador.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('procesadores/crearProcesador', [], true)
+ 5 APPPATH\Controllers\Procesadores.php(94): view('procesadores/crearProcesador', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Procesadores->guardarProcesador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Procesadores))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

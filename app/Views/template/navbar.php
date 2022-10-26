@@ -13,25 +13,27 @@ $session=session();
       <li class="nav-item dropdown">
       <?php if($session->get('id')!=null and $session->get('tipo_usuario')=='A'): ?> 
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Ingreso de los Datos
+            Ingreso de Datos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="http://localhost/comparador2/public/crearEquipo">Equipos</a></li>
             <li><a class="dropdown-item" href="http://localhost/comparador2/public/crearRam">R.A.M.s</a></li>
             <li><a class="dropdown-item" href="http://localhost/comparador2/public/crearProcesador">Procesadores</a></li>
+            <li><a class="dropdown-item" href="http://localhost/comparador2/public/crearJuego">Juegos</a></li>
           </ul>
       <?php endif ?>
         </li>
         <li class="nav-item dropdown">
-        <?php if($session->get('id')!=null and $session->get('tipo_usuario')=='A' or $session->get('tipo_usuario')=='U'):?>
+        <?php if($session->get('id')!=null and $session->get('tipo_usuario')=='A'):?>
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Lista
+          Lista de Datos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="http://localhost/comparador2/public/listarEquipos">Equipos</a></li>
             <li><a class="dropdown-item" href="http://localhost/comparador2/public/listarRams">R.A.M.s</a></li>
             <li><a class="dropdown-item" href="http://localhost/comparador2/public/listarProcesadores">Procesadores</a></li>
             <li><a class="dropdown-item" href="http://localhost/comparador2/public/listarUsuarios">Usuarios</a></li>
+            <li><a class="dropdown-item" href="http://localhost/comparador2/public/listarJuegos">Juegos</a></li>
           </ul>
         <?php endif ?>
         </li>

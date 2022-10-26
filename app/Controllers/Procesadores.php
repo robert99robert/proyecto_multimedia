@@ -6,16 +6,13 @@ use App\Models\Procesador;
 class Procesadores extends Controller{
 
     public function listarProcesadores(){
-
-        $procesador = new Procesador();
-        $datos['procesadores'] = $procesador->orderBy('cod_pro','ASC')->findAll();
-        
         $session = session();
 
         $datos['cabecera'] = view('template/cabecera');
         $datos['navbar'] = view('template/navbar');
+        $datos['info'] = view('template/info');
         $datos['piepagina'] = view('template/piepagina');
-        if($session->get('id')!=null and $session->get('tipo_usuario')=='U' or $session->get('tipo_usuario')=='A'):
+        if($session->get('id')!=null and $session->get('tipo_usuario')=='A'):
             return view('procesadores/listarProcesadores',$datos);
         else:
             return view('main',$datos);
@@ -42,11 +39,6 @@ class Procesadores extends Controller{
     }
 
     public function guardarProcesador(){
-
-        $data = [];
-        $data['cabecera'] = view('template/cabecera');
-        $data['navbar'] = view('template/navbar');
-        $data['piepagina'] = view('template/piepagina');
         $rules = [
             'compania_pro'=> [
                 'rules'=>'required|alpha_numeric_space|min_length[2]',
@@ -102,7 +94,7 @@ class Procesadores extends Controller{
         return view('procesadores/crearProcesador',$data);
     }
 
-    public function borrarProcesador($cod_pro=null){
+    /*public function borrarProcesador($cod_pro=null){
 
     $procesador = new Procesador();
     $datosProcesador = $procesador->where('cod_pro',$cod_pro)->first();
@@ -112,4 +104,5 @@ class Procesadores extends Controller{
     //echo "Borrar registro".$cod_ram;
 
     }
+    */
 }

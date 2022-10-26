@@ -16,9 +16,26 @@ class Ram extends Model{
         'mhz' => 'required|greater_than[0]',
     ];
     protected $validationMessages = [
+        'compania_ram'=> [
+                'required'=>'Compañia requerida.',
+                'alpha_numeric_space'=>'Ingrese sólo letras, números o espacios.',
+                'min_length'=>'Escriba tres o más caracteres.'
+            ],
+        
         'cap_mb_ram' => [
-            'numeric' => 'Sólo puede contener valores numéricos.',
+            'required'=>'Capacidad MBs requerida.',
+            'numeric' => 'Sólo puede contener valores numéricos.'
         ],
+        'tipo_ram'     =>[
+                'required'=>'Tipo de R.A.M. requerida.',
+                'min_length'=>'Ingresa dos o más caracteres.',
+                'alpha_numeric'=>'Ingresa solo letras y números.'
+            ],
+        'mhz' => [
+                'required'=>'MHz requeridos.',
+                'greater_than'=>'Ingrese una valor mayor a 0.'
+                ],
+            
     ];
     //protected $returnType     = 'array';
     //protected $useSoftDeletes = true;

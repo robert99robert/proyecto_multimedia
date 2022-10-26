@@ -1,37 +1,31 @@
 <?php echo $cabecera?>
-<?php echo $navbar?>
-
+<?php echo $navbar?> 
 <h5>Lista de Usuarios</h5>
-      
-      <table class="table table-light">
-        <thead class="thead-light">
-          <tr>
-            <th>Id</th>
-            <th>Nombre</th>
-
-            <th>Tipo de Usuario</th>
-            <th>Estado</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-
-        <?php foreach($usuarios as $usuario): ?>
-          <tr>
-            <td><?php echo $usuario['id']?></td>
-            <td><?php echo $usuario['name']?></td>
-
-            <td><?php echo $usuario['tipo_usuario']?></td>
-            <td><?php echo $usuario['estado']?></td>
-            <td>Editar
-
-              <a href="<?=base_url('borrarUsuario/'.$usuario['id']);?>"class="btn btn-danger" type="button">Borrar</a>
-
-            </td>
-          </tr>
-
-        <?php endforeach;?>
-
-        </tbody>
-      </table>
+    <div class="container" style="background-color: white;>
+      <div class="row">
+        <table id="serverSideTable" class="display">
+          <thead class="thead-light">
+            <tr>
+              <th>ID</th>
+              <th>Email MBs</th>
+              <th>Nombre</th>
+              <th>Tipo de Usuario</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+<script>
+  $(document).ready(function(){
+    $('#serverSideTable').DataTable( {
+      "processing":true,
+      "serverSide":true,
+      "ajax":"./php/server_processing_usuario.php",
+      language:{
+        url:'./Spanish.json'
+      }
+    });
+  });
+</script>
 <?php echo $piepagina?>

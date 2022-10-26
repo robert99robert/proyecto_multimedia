@@ -14,7 +14,7 @@ class Equipo extends Model
     /*protected $returnType     = 'array';
     protected $useSoftDeletes = true;*/
 
-    protected $allowedFields = ['valor', 'cod_ram','cod_pro'];
+    protected $allowedFields = ['id', 'cod_ram','cod_pro'];
 
     /*protected $useTimestamps = false;
     protected $createdField  = 'created_at';

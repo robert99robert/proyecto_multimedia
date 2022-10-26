@@ -9,7 +9,7 @@ class Rams extends Controller{
         helper("form");
     }
 
-    public function guardarRam(){//antes llamanda indexx(), que esta guardada en la rutas
+    public function guardarRam(){//antes llamada indexx(), que está guardada en la rutas
         $data = [];
         $data['cabecera'] = view('template/cabecera');
         $data['navbar'] = view('template/navbar');
@@ -56,6 +56,7 @@ class Rams extends Controller{
                         'mhz'=>$this->request->getVar('mhz'),
                         ];
                         $ram->insert($data);
+                        
                         return $this->response->redirect(site_url('/listarRams'));
             }
             else{
@@ -75,7 +76,7 @@ class Rams extends Controller{
         $datos['navbar'] = view('template/navbar');
         $datos['info'] = view('template/info');
         $datos['piepagina'] = view('template/piepagina');
-        if($session->get('id')!=null and $session->get('tipo_usuario')=='U' or $session->get('tipo_usuario')=='A'):
+        if($session->get('id')!=null and $session->get('tipo_usuario')=='A'):
             return view('rams/listarRams',$datos);
         else:
             return view('main',$datos);
@@ -111,7 +112,34 @@ class Rams extends Controller{
         return $this->response->redirect(site_url('/listarRams'));
     }*/
 
-    public function borrarRam($cod_ram=null){
+    /*public function editarRam($cod_ram=null){
+
+        $ram = new Ram();
+        $datos['ram'] = $ram->where('cod_ram',$cod_ram)->first();
+        $datos['cabecera'] = view('template/cabecera');
+        $datos['navbar'] = view('template/navbar');
+        $datos['piepagina'] = view('template/piepagina');
+        return view('rams/editarRam',$datos);
+    }
+    */
+
+    /*public function actualizarRam(){
+        
+        $ram = new Ram();
+        $data=[
+            'compania_ram'=>$this->request->getVar('compania_ram'),
+            'cap_mb_ram'=>$this->request->getVar('cap_mb_ram'),
+            'tipo_ram'=>$this->request->getVar('tipo_ram'),
+            'mhz'=>$this->request->getVar('mhz'),
+            ];
+            $cod_ram = $this->request->getVar('cod_ram');
+            $ram->update($cod_ram,$data);
+            return $this->response->redirect(site_url('/listarRams'));//devuelve la página sin insertar datos
+
+    }
+    */
+
+    /*public function borrarRam($cod_ram=null){
     
     $session = session();
     if($session->get('tipo_usuario')=='A'):    
@@ -125,4 +153,5 @@ class Rams extends Controller{
         //echo "Borrar registro".$cod_ram;
 
     }
+    */
 }

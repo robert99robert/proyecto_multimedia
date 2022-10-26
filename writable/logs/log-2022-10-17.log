@@ -1,0 +1,34 @@
+CRITICAL - 2022-10-17 15:17:34 --> Undefined variable $info
+in APPPATH\Views\main.php on line 4.
+ 1 APPPATH\Views\main.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'APPPATH\\Views\\main.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\Equipos.php(57): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Equipos->crearEquipo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Equipos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 15:59:05 --> Undefined variable $session
+in APPPATH\Controllers\RequisitosRecomendados.php on line 19.
+ 1 APPPATH\Controllers\RequisitosRecomendados.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\RequisitosRecomendados.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\RequisitosRecomendados->crearRequisitoRecomendado()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequisitosRecomendados))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 15:59:05 --> Undefined variable $session
+in APPPATH\Controllers\RequisitosRecomendados.php on line 19.
+ 1 APPPATH\Controllers\RequisitosRecomendados.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\RequisitosRecomendados.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\RequisitosRecomendados->crearRequisitoRecomendado()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequisitosRecomendados))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 15:59:46 --> Invalid file: requisitosRecomendas/crearRequisitoRecomendado.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('requisitosRecomendas/crearRequisitoRecomendado.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('requisitosRecomendas/crearRequisitoRecomendado', [], true)
+ 3 APPPATH\Controllers\RequisitosRecomendados.php(21): view('requisitosRecomendas/crearRequisitoRecomendado', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\RequisitosRecomendados->crearRequisitoRecomendado()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RequisitosRecomendados))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -10,10 +10,6 @@ Formulario para crear un equipo
         <form method="post" action="<?=site_url('/guardarEquipo')?>" enctype="multipart/form-data">
     
     <div class="form-group">
-        <label for="valor">Valor del Equipo</label>
-        <input id="valor" class="form-control" type="text" name="valor">
-    </div>
-    <div class="form-group">
         <label for="cod_ram">R.A.M.</label>
         <select id="cod_ram" class="form-control" name="cod_ram">
         <?php foreach($rams as $ram): ?>
@@ -31,6 +27,16 @@ Formulario para crear un equipo
         <?php foreach($procesadores as $procesador): ?>
             <option value="<?php echo $procesador['cod_pro']?>">
                 <?php echo $procesador['compania_pro']." ".$procesador['modelo_pro']." ".$procesador['cant_nucleo']."Nucleos ".$procesador['ghz']."GHz"?>
+            </option>
+        <?php endforeach;?>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="id">ID</label>
+        <select id="id" class="form-control" name="id">
+        <?php foreach($usuarios as $usuario): ?>
+            <option value="<?php echo $usuario['id']?>">
+                <?php echo $usuario['name']." ".$usuario['email']." ".$usuario['tipo_usuario']." ".$usuario['estado'].""?>
             </option>
         <?php endforeach;?>
         </select>

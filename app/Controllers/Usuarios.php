@@ -59,7 +59,7 @@ class Usuarios extends Controller{
         return view('usuarios/ingresarUsuario',$datos);
     }*/
 
-    public function borrarUsuario($id=null){
+    /*public function borrarUsuario($id=null){
 
     $session = session();//aca sobran los permisos, porque el un USUARIO nunca podrá acceder a la lista de usurios, por ende no podrá borrar registros    
     if($session->get('tipo_usuario')=='A'):
@@ -73,4 +73,5 @@ class Usuarios extends Controller{
     //echo "Borrar registro".$cod_ram;
 
     }
+    */
 }
