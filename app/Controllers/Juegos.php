@@ -50,6 +50,8 @@ class Juegos extends Controller
         $datos['cabecera'] = view('template/cabecera');
         $datos['navbar'] = view('template/navbar');
         $datos['piepagina'] = view('template/piepagina');
+        $builder = $juego->table('titulo');
+        $datos['count'] = $builder->countAll(); 
         if($session->get('id')!=null and $session->get('tipo_usuario')=='U' or $session->get('tipo_usuario')=='A'):
             return view('juegos/listarJuegos',$datos);
         else:

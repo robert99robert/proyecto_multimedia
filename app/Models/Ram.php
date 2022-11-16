@@ -7,13 +7,14 @@ class Ram extends Model{
     protected $table      = 'RAM';
     // Uncomment below if you want add primary key
      protected $primaryKey = 'cod_ram';
-     protected $allowedFields=['compania_ram', 'cap_mb_ram', 'tipo_ram', 'mhz'];
+     protected $allowedFields=['compania_ram', 'cap_mb_ram', 'tipo_ram', 'mhz','clp_ram'];
 
     protected $validationRules = [
         'compania_ram'     => 'required|alpha_numeric_space|min_length[3]',
         'cap_mb_ram'        => 'required|numeric',
         'tipo_ram'     => 'required|min_length[2]|alpha_numeric',
         'mhz' => 'required|greater_than[0]',
+        'clp_ram'=>'required|greater_than[0]'
     ];
     protected $validationMessages = [
         'compania_ram'=> [
