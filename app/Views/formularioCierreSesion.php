@@ -13,7 +13,7 @@
                     <input type="checkbox" class="form-check-input" id="conditions" name="conditions" value="1">
                     <label class="form-check-label" for="conditions">¿Deseas cerrar esta sesión?</label>
                  </div>
-                    <input type="submit" class="btn btn-primary" name="sendForm" value="Aceptar"/>
+                    <input type="submit" class="btn btn-primary" name="sendForm" value="Enviar"/>
                 </form>
                 </p>
         </div>

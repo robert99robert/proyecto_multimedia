@@ -36,8 +36,6 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('crearCorreo', 'Home::crearCorreo');
-$routes->post('enviarCorreo', 'Home::enviarCorreo');
 
 /*
  * --------------------------------------------------------------------
@@ -95,6 +93,3 @@ $routes->get('listarJuegos', 'Juegos::listarJuegos');
 $routes->get('borrarJuego/(:num)', 'Juegos::borrarJuego/$1');
 $routes->get('crearJuego', 'Juegos::crearJuego');
 $routes->post('guardarJuego', 'Juegos::guardarJuego');
-
-$routes->get('/', 'SendMail::index');
-$routes->match(['get', 'post'], 'SendMail/sendMail', 'SendMail::sendMail');

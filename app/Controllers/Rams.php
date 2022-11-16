@@ -9,96 +9,137 @@ class Rams extends Controller{
         helper("form");
     }
 
-    public function crearRam(){
-
-        $session = session();
-        $data['cabecera'] = view('template/cabecera');
-        $data['navbar'] = view('template/navbar');
-        $data['info'] = view('template/info');
-        $data['piepagina'] = view('template/piepagina');
-        $data['validation'] = \Config\Services::validation();
-        if($session->get('id')!=null and $session->get('tipo_usuario')=='A'):
-            return view('rams/crearRam',$data);
-        else:
-            return view('main',$data);
-        endif;
-    }
-
     public function guardarRam(){//antes llamada indexx(), que está guardada en la rutas
         $data = [];
         $data['cabecera'] = view('template/cabecera');
         $data['navbar'] = view('template/navbar');
         $data['piepagina'] = view('template/piepagina');
-        if($this->validate('ram')){
-            $ram = new Ram();
-            $data=[
-                'compania_ram'=>$this->request->getVar('compania_ram'),
-                'cap_mb_ram'=>$this->request->getVar('cap_mb_ram'),
-                'tipo_ram'=>$this->request->getVar('tipo_ram'),
-                'mhz'=>$this->request->getVar('mhz'),
-                'clp_ram'=>$this->request->getVar('clp_ram'),
-            ];
-            $ram->insert($data);
-            return $this->response->redirect(site_url('/listarRams'));
+        $rules = [
+            'compania_ram'=> [
+                'rules'=>'required|alpha_numeric_space|min_length[3]',
+                'errors'=>[
+                    'required'=>'Compañia requerida.',
+                    'alpha_numeric_space'=>'Ingrese sólo letras, números o espacios.',
+                    'min_length'=>'Escriba tres o más caracteres.'
+                ],
+            ],
+            'cap_mb_ram'        => [
+                'rules'=> 'required|numeric',
+                'errors'=>[
+                    'required'=>'Capacidad MBs requerida.',
+                    'numeric'=>'Ingresa solo números.'
+                ],
+            ],
+            'tipo_ram'     =>[
+                'rules'=> 'required|min_length[2]|alpha_numeric',
+                'errors'=>[
+                    'required'=>'Tipo de R.A.M. requerida.',
+                    'min_length'=>'Ingresa dos o más caracteres.',
+                    'alpha_numeric'=>'Ingresa solo letras y números.'
+                ],
+            ],
+            'mhz' => [
+                'rules'=>'required|greater_than[0]',
+                'errors'=>[
+                    'required'=>'MHz requeridos.',
+                    'greater_than'=>'Ingrese una valor mayor a 0.'
+                ],
+            ],
+        ];
+        if($this->request->getMethod()=='post'){
+            if($this->validate($rules)){
+                $ram = new Ram();
+                $data=[
+                        'compania_ram'=>$this->request->getVar('compania_ram'),
+                        'cap_mb_ram'=>$this->request->getVar('cap_mb_ram'),
+                        'tipo_ram'=>$this->request->getVar('tipo_ram'),
+                        'mhz'=>$this->request->getVar('mhz'),
+                        ];
+                        $ram->insert($data);
+                        
+                        return $this->response->redirect(site_url('/listarRams'));
             }
-        else{
-            return redirect()->back()->withInput();
+            else{
+                $data['validation']=$this->validator;
             }
         }
-    
+        return view('rams/crearRam',$data);
+    }
 
     public function listarRams(){
 
         $session = session();
         $ram = new Ram();
-        $data['rams'] = $ram->orderBy('cod_ram','ASC')->findAll();
+        $datos['rams'] = $ram->orderBy('cod_ram','ASC')->findAll();
         
-        $data['cabecera'] = view('template/cabecera');
-        $data['navbar'] = view('template/navbar');
-        $data['info'] = view('template/info');
-        $data['piepagina'] = view('template/piepagina');
+        $datos['cabecera'] = view('template/cabecera');
+        $datos['navbar'] = view('template/navbar');
+        $datos['info'] = view('template/info');
+        $datos['piepagina'] = view('template/piepagina');
         if($session->get('id')!=null and $session->get('tipo_usuario')=='A'):
-            return view('rams/listarRams',$data);
+            return view('rams/listarRams',$datos);
         else:
-            return view('main',$data);
+            return view('main',$datos);
         endif;
     }
 
-    public function editarRam($cod_ram=null){
+    public function crearRam(){
 
-        $ram = new Ram();
-        $data['ram'] = $ram->where('cod_ram',$cod_ram)->first();
-        $data['cabecera'] = view('template/cabecera');
-        $data['navbar'] = view('template/navbar');
-        $data['piepagina'] = view('template/piepagina');
-        $data['validation'] = \Config\Services::validation();
-        return view('rams/editarRam',$data);
+        $datos['cabecera'] = view('template/cabecera');
+        $datos['navbar'] = view('template/navbar');
+        $datos['info'] = view('template/info');
+        $datos['piepagina'] = view('template/piepagina');
+        
+        $session = session();
+
+        if($session->get('id')!=null and $session->get('tipo_usuario')=='A'):
+            return view('rams/crearRam',$datos);
+        else:
+            return view('main',$datos);
+        endif;
     }
 
-    public function actualizarRam(){
-        $data['cabecera'] = view('template/cabecera');
-        $data['navbar'] = view('template/navbar');
-        $data['piepagina'] = view('template/piepagina');
-        if($this->validate('ram')){
-            $ram = new Ram();
-            $data=[
-                'compania_ram'=>$this->request->getVar('compania_ram'),
-                'cap_mb_ram'=>$this->request->getVar('cap_mb_ram'),
-                'tipo_ram'=>$this->request->getVar('tipo_ram'),
-                'mhz'=>$this->request->getVar('mhz'),
-                'clp_ram'=>$this->request->getVar('clp_ram'),
+    /*public function guardarRam(){
+
+        $ram = new Ram();
+        $datos=[
+            'compania_ram'=>$this->request->getVar('compania_ram'),
+            'cap_mb_ram'=>$this->request->getVar('cap_mb_ram'),
+            'tipo_ram'=>$this->request->getVar('tipo_ram'),
+            'mhz'=>$this->request->getVar('mhz'),
+        ];
+        $ram->insert($datos);
+        return $this->response->redirect(site_url('/listarRams'));
+    }*/
+
+    /*public function editarRam($cod_ram=null){
+
+        $ram = new Ram();
+        $datos['ram'] = $ram->where('cod_ram',$cod_ram)->first();
+        $datos['cabecera'] = view('template/cabecera');
+        $datos['navbar'] = view('template/navbar');
+        $datos['piepagina'] = view('template/piepagina');
+        return view('rams/editarRam',$datos);
+    }
+    */
+
+    /*public function actualizarRam(){
+        
+        $ram = new Ram();
+        $data=[
+            'compania_ram'=>$this->request->getVar('compania_ram'),
+            'cap_mb_ram'=>$this->request->getVar('cap_mb_ram'),
+            'tipo_ram'=>$this->request->getVar('tipo_ram'),
+            'mhz'=>$this->request->getVar('mhz'),
             ];
             $cod_ram = $this->request->getVar('cod_ram');
             $ram->update($cod_ram,$data);
-            
             return $this->response->redirect(site_url('/listarRams'));//devuelve la página sin insertar datos
-        }
-        else{
-            return redirect()->back()->withInput();
-        }  
-    }
 
-    public function borrarRam($cod_ram=null){
+    }
+    */
+
+    /*public function borrarRam($cod_ram=null){
     
     $session = session();
     if($session->get('tipo_usuario')=='A'):    
@@ -112,5 +153,5 @@ class Rams extends Controller{
         //echo "Borrar registro".$cod_ram;
 
     }
-    
+    */
 }

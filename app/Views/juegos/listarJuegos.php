@@ -1,61 +1,35 @@
 <?php echo $cabecera?>
-<div style="position: absolute; background-color:white; height: 300px; width: 200px; margin-left:-203px; margin-top: 220px"><canvas id="myChart" style="display: block; height: 300px; width: 200px"></canvas></div>
-<?php echo $navbar?> 
-<div class="container" style="background-color:white">
-<div class="center"><h5>Lista de Juegos</h5></div>
-      <table class="table table-light" id="tablaJuegos">
-        <thead class="thead-light">
-          <tr>
-            <th>Cód. Juego</th>
-            <th>Título MBs</th>
-            <th>Cód. R.A.M.</th>
-            <th>Cód. Pro.</th>
-            <th>Imagen</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-
-        <?php foreach($juegos as $juego): ?>
-          <tr>
-            <td><?php echo $juego['cod_juego']?></td>
-            <td><?php echo $juego['titulo']?></td>
-            <td><?php echo $juego['cod_ram']?></td>
-            <td><?php echo $juego['cod_pro']?></td>
-            <td>
-              <img src="<?=base_url()?>/uploads/<?=$juego['imagen'];?>" width="100" height="100">
-            </td>
-            <td>
-              <a href="<?=base_url('editarJuego/'.$juego['cod_juego']);?>"class="btn btn-warning" type="button">Editar</a>
-              <a href="<?=base_url('borrarJuego/'.$juego['cod_juego']);?>"class="btn btn-danger" type="button">Borrar</a>
-            </td>
-          </tr>
-
-        <?php endforeach;?>
-
-        </tbody>
-      </table>
-</div>
-
-
-<?php echo $piepagina?>
-
-<script>
-  var tabla = document.querySelector("#tablaJuegos");
-  var dataTable = new DataTable(tabla);
-</script>
-
+<?php echo $navbar?>
+    <div class="container" style="background-color: white;">
+      <h5 style="background-color: white">Lista de Juegos</h5>
+      <div class="row">
+        <table id="serverSideTable" class="dataTable display cell-border compact hover ">
+          <thead class="thead-light">
+            <tr>
+              <th>Cód. Juego</th>
+              <th>Imagen</th>
+              <th>Título</th>
+              <th>Cód. R.A.M.</th>
+              <th>Cód. Procesador</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <canvas id="myChart" width="400" height="400"></canvas>
 <script>
   var ctx= document.getElementById("myChart").getContext("2d");
   var myChart= new Chart(ctx,{
     type:"bar",
     data:{
-      labels:['Cantidad de Juegos'],
+      labels:['col1','col2','col3'],
       datasets:[{
-        labels:['Cantidad de Juegos'],
-        data:[<?php echo $count?>],
+        labels:'Num datos',
+        data:[10,9,15],
         backgroundColor:[
-          'rgb(66, 134, 244)'
+          'rgb(66, 134, 244)',
+          'rgb(74, 135, 72)',
+          'rgb(229, 89, 50)'
           
         ]
       }]
@@ -64,11 +38,24 @@
       scales:{
         yAxes:[{
           ticks:{
-            beginAtZero:true,
-            fontSize:10
+            beginAtZero:true
           }
         }]
       }
     }
   });
 </script>
+<img class="img-fluid" src="../public/uploads/1666724747_70ab35d61f635ffb5dcd.jpg" alt="caballo">
+<script>
+  $(document).ready(function(){
+    $('#serverSideTable').DataTable( {
+      "processing":true,
+      "serverSide":true,
+      "ajax":"./php/server_processing_juego.php",
+      language:{
+        url:'./Spanish.json'
+      }
+    });
+  });
+</script>
+<?php echo $piepagina?>

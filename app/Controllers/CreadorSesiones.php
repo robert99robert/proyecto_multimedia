@@ -19,7 +19,7 @@ class CreadorSesiones extends Controller
     {
         helper(['form']);
         $rules = [
-            'email'         => 'required|min_length[4]|max_length[100]|is_unique[usuario.email]',
+            'email'         => 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuario.email]',
             'password'      => 'required|min_length[4]|max_length[50]',
             'name'          => 'required|min_length[2]|max_length[50]|alpha',
             'confirmpassword'  => 'required|matches[password]'
@@ -35,14 +35,6 @@ class CreadorSesiones extends Controller
                 'name'     => $this->request->getVar('name')
             ];
             $usuarios->save($data);
-
-            $correo = \Config\Services::email();
-            $correo->setTo($this->request->getVar('email'),);
-            $correo->setFrom('administracion@comparador.com', 'Confirmación de registro.');
-            $correo->setSubject($asunto = "Usted se ha registrado en comparador.com");
-            $correo->setMessage($msg = "Hola ". $this->request->getVar('name') . " Bienvenido");
-            $correo->send();
-
             return redirect()->to('/inicioSesion');
         }else{
             $data['validation'] = $this->validator;
