@@ -26,6 +26,66 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/b-print-2.2.3/datatables.min.js"></script>
 
+    <script type="text/javascript">
+      function confirmarBorrado(){
+        var respuesta = confirm("¿Deseas borrar este registro?");
+        if(respuesta == true){
+          return true;
+        }
+        else{
+          return false;
+        }
+      }
+    
+    </script>
+    <script type="text/javascript">
+      function confirmarEditado(){
+        var respuesta = confirm("¿Deseas editar este registro?");
+        if(respuesta == true){
+          return true;
+        }
+        else{
+          return false;
+        }
+      }
+    
+    </script>
+
+  <!--Scripts para el uso de QRs-->
+
+  <link rel="stylesheet" href="../public/css/jqx.base.css" type="text/css"/>
+  <script type="text/javascript" src="../public/js/jqxcore.js"></script>
+	<script type="text/javascript" src="../public/js/jqxbarcode.js"></script>
+	<script type="text/javascript" src="../public/js/jqxqrcode.js"></script>
+	<script type="text/javascript" src="../public/js/jqxbuttons.js"></script>
+	<script type="text/javascript" src="../public/js/demos.js"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			const qrcodes = [...document.querySelectorAll('.qrcode')];
+			for (let i = 0; i < qrcodes.length; i++) {
+				const qrcodeElement = qrcodes[i];
+				const renderAs = qrcodeElement.getAttribute('render-as') || 'svg';
+				const displayLabel = qrcodeElement.hasAttribute('display-label') ? true : false;
+				const value = qrcodeElement.getAttribute('value');
+				const labelPosition = qrcodeElement.getAttribute('label-position') || 'bottom';
+				const errorLevel = qrcodeElement.getAttribute('error-level') || 'L';
+				const embedImage = qrcodeElement.getAttribute('embed-image') || '';
+				// create Barcode component
+				new jqxQRcode(qrcodeElement, {
+					renderAs: renderAs,
+					value: value,
+					errorLevel: errorLevel,
+					labelPosition: labelPosition,
+					embedImage: embedImage,
+					imageWidth: 40,
+					imageHeight: 60,
+					displayLabel: displayLabel
+				});
+			}
+		}
+	</script>
+  <!---->
+
   </head>
 <style>
 
@@ -37,9 +97,7 @@
   width: 60%;
   padding: 10px;
 }
-  footer{
-    background-color:coral;
-  }
+  
 </style>
 <body>
 

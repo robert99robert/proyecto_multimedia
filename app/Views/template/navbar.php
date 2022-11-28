@@ -42,7 +42,7 @@ $session=session();
             #$#
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">###</a>
+            <li><a class="dropdown-item" href="http://localhost/comparador2/public/generarQR">###</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                 </ul>

@@ -98,3 +98,5 @@ $routes->post('guardarJuego', 'Juegos::guardarJuego');
 
 $routes->get('/', 'SendMail::index');
 $routes->match(['get', 'post'], 'SendMail/sendMail', 'SendMail::sendMail');
+
+$routes->get('generarQR', 'Home::generarQR');

@@ -25,8 +25,8 @@
             <td><?php echo $ram['compania_ram']?></td>
             <td><?php echo $ram['clp_ram']?></td>
             <td>
-              <a href="<?=base_url('editarRam/'.$ram['cod_ram']);?>"class="btn btn-warning" type="button">Editar</a>
-              <a href="<?=base_url('borrarRam/'.$ram['cod_ram']);?>"class="btn btn-danger" type="button">Borrar</a>
+              <a href="<?=base_url('editarRam/'.$ram['cod_ram']);?>"class="btn btn-warning" type="button" onclick="return confirmarEditado()">Editar</a>
+              <a href="<?=base_url('borrarRam/'.$ram['cod_ram']);?>"class="btn btn-danger" type="button" onclick="return confirmarBorrado()">Borrar</a>
             </td>
           </tr>
 
@@ -36,8 +36,15 @@
       </table>
 </div>
 <script>
-  var tabla = document.querySelector("#tablaRam");
-  var dataTable = new DataTable(tabla);
+  //var tabla = document.querySelector("#tablaRam");
+  var dataTable = new DataTable("#tablaRam", {
+    paging: false,
+    scrollY: 100,
+    language:{
+        url:'./Spanish.json'
+      }
+  }
+);
 </script>
 <?php echo $piepagina?>
     

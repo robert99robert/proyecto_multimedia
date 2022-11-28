@@ -38,9 +38,9 @@ class CreadorSesiones extends Controller
 
             $correo = \Config\Services::email();
             $correo->setTo($this->request->getVar('email'),);
-            $correo->setFrom('administracion@comparador.com', 'Confirmación de registro.');
-            $correo->setSubject($asunto = "Usted se ha registrado en comparador.com");
-            $correo->setMessage($msg = "Hola ". $this->request->getVar('name') . " Bienvenido");
+            $correo->setFrom('administracion@comparador2.com', 'Administración');
+            $correo->setSubject($asunto = "Usted se ha registrado en comparador2.com");
+            $correo->setMessage($msg = "Bienvenido ". $this->request->getVar('name') ."<br>Atentamente: <br>Administración de comparador.com<br>Sitio Web: www.comparador2.com<br>Consultas: administracion@comparador2.com");
             $correo->send();
 
             return redirect()->to('/inicioSesion');

@@ -36,7 +36,7 @@ class Home extends BaseController
 
                 $correo = \Config\Services::email();
                 $correo->setTo($email);
-                $correo->setFrom('johndoe@gmail.com', 'Confirm Registration');
+                $correo->setFrom('', 'Administración');
                 $correo->setSubject($asunto);
                 $correo->setMessage($msg);
                 if ($correo->send()) 
@@ -55,6 +55,13 @@ class Home extends BaseController
                     return redirect()->back()->withInput();
                 }            
         }
+    }
+    public function generarQR(){
+        $data['navbar2'] = view('template/navbar2');
+        $data['cabecera'] = view('template/cabecera');
+        $data['navbar'] = view('template/navbar');
+        $data['piepagina'] = view('template/piepagina');
+        return view('qr',$data);
     }
 }
 
