@@ -60,11 +60,4 @@ class Juegos extends Controller
         endif;
 
     }
-    public function actualizarRequisitosRecomendado(){
-
-    }
-    public function borrarRequisitosRecomendado(){
-        
-    }
-
 }

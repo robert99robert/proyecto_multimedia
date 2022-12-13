@@ -1,0 +1,181 @@
+CRITICAL - 2022-11-30 12:45:40 --> Undefined variable $navbar
+in APPPATH\Views\comparador.php on line 1.
+ 1 APPPATH\Views\comparador.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\comparador.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\comparador.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('comparador', [], true)
+ 5 APPPATH\Controllers\Home.php(96): view('comparador', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 12:46:38 --> Undefined variable $navbar
+in APPPATH\Views\comparador.php on line 1.
+ 1 APPPATH\Views\comparador.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\comparador.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\comparador.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('comparador', [], true)
+ 5 APPPATH\Controllers\Home.php(97): view('comparador', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 12:46:40 --> Undefined variable $navbar
+in APPPATH\Views\comparador.php on line 1.
+ 1 APPPATH\Views\comparador.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\comparador.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\comparador.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('comparador', [], true)
+ 5 APPPATH\Controllers\Home.php(97): view('comparador', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 12:46:47 --> Undefined variable $navbar
+in APPPATH\Views\comparador.php on line 1.
+ 1 APPPATH\Views\comparador.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\comparador.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\comparador.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('comparador', [], true)
+ 5 APPPATH\Controllers\Home.php(97): view('comparador', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 12:46:50 --> Undefined variable $navbar
+in APPPATH\Views\comparador.php on line 1.
+ 1 APPPATH\Views\comparador.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar', 'APPPATH\\Views\\comparador.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\comparador.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('comparador', [], true)
+ 5 APPPATH\Controllers\Home.php(97): view('comparador', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 12:48:47 --> Undefined variable $cabecera
+in APPPATH\Views\comparador.php on line 1.
+ 1 APPPATH\Views\comparador.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\comparador.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\comparador.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('comparador', [], true)
+ 5 APPPATH\Controllers\Home.php(97): view('comparador', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 13:04:28 --> Undefined variable $cabecera
+in APPPATH\Views\resultado.php on line 1.
+ 1 APPPATH\Views\resultado.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\resultado.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\resultado.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('resultado', [], true)
+ 5 APPPATH\Controllers\Home.php(97): view('resultado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 13:05:02 --> Undefined variable $cabecera
+in APPPATH\Views\resultado.php on line 1.
+ 1 APPPATH\Views\resultado.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\resultado.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\resultado.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('resultado', [], true)
+ 5 APPPATH\Controllers\Home.php(97): view('resultado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 13:11:35 --> Undefined variable $cabecera
+in APPPATH\Views\resultado.php on line 1.
+ 1 APPPATH\Views\resultado.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cabecera', 'APPPATH\\Views\\resultado.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\resultado.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('resultado', [], true)
+ 5 APPPATH\Controllers\Home.php(97): view('resultado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 13:25:42 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Controllers\Home.php on line 102.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 13:27:05 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Controllers\Home.php on line 102.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 13:28:21 --> Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+in APPPATH\Controllers\Home.php on line 102.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 13:28:48 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Controllers\Home.php on line 102.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 13:35:39 --> syntax error, unexpected string content "", expecting "-" or identifier or variable or number
+in APPPATH\Controllers\Home.php on line 102.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 13:36:49 --> Undefined array key "cod_equip_1"
+in APPPATH\Controllers\Home.php on line 98.
+ 1 APPPATH\Controllers\Home.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cod_equip_1"', 'APPPATH\\Controllers\\Home.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 14:32:32 --> Undefined variable $navbar2
+in APPPATH\Views\resultado.php on line 2.
+ 1 APPPATH\Views\resultado.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar2', 'APPPATH\\Views\\resultado.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\resultado.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('resultado', [], true)
+ 5 APPPATH\Controllers\Home.php(108): view('resultado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 14:32:39 --> Undefined variable $navbar2
+in APPPATH\Views\resultado.php on line 2.
+ 1 APPPATH\Views\resultado.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $navbar2', 'APPPATH\\Views\\resultado.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\resultado.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('resultado', [], true)
+ 5 APPPATH\Controllers\Home.php(108): view('resultado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 14:54:42 --> Undefined variable $versus
+in APPPATH\Views\resultado.php on line 3.
+ 1 APPPATH\Views\resultado.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $versus', 'APPPATH\\Views\\resultado.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\resultado.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('resultado', [], true)
+ 5 APPPATH\Controllers\Home.php(120): view('resultado', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->comparador()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

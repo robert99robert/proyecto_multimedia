@@ -12,7 +12,7 @@ class Equipos extends Controller{
 
         $session = session();
         $equipo = new Equipo();
-        //$datos['equipos'] = $equipo->orderBy('cod_equip','ASC')->findAll();
+        $datos['equipos'] = $equipo->orderBy('cod_equip','ASC')->findAll();
         $datos['cabecera'] = view('template/cabecera');
         $datos['navbar'] = view('template/navbar');
         $datos['piepagina'] = view('template/piepagina');
@@ -69,7 +69,7 @@ class Equipos extends Controller{
         ];
         $equipo->insert($datos);
         //return $this->response->redirect(site_url('/listarEquipos'));
-        return redirect()->to('/Equipos/listarEquipos');
+        return redirect()->to('/listarEquipos');
 
         /*$builder = $db->table('EQUIPO');
         $builder->selectMax("cod_equip");

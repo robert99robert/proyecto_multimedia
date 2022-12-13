@@ -90,6 +90,7 @@ $routes->match(['get', 'post'], 'IniciadorSesiones/loginAuth', 'IniciadorSesione
 $routes->get('/inicioSesion', 'IniciadorSesiones::index');
 $routes->get('/perfil', 'Perfil::index',['filter' => 'authGuard']);
 $routes->match(['get','post'],'CerradorSesiones/cierreSesion','CerradorSesiones::cierreSesion');//la función cierreSesion() utiliza una entrada de datos, además de desplegar una vista; por tanto debe utilizar el método get y post.
+$routes->get('verPerfil', 'Perfil::verPerfil');
 
 $routes->get('listarJuegos', 'Juegos::listarJuegos');
 $routes->get('borrarJuego/(:num)', 'Juegos::borrarJuego/$1');
@@ -100,3 +101,8 @@ $routes->get('/', 'SendMail::index');
 $routes->match(['get', 'post'], 'SendMail/sendMail', 'SendMail::sendMail');
 
 $routes->get('generarQR', 'Home::generarQR');
+$routes->get('formularioComparar', 'Home::formularioComparar');
+$routes->post('comparador', 'Home::comparador');
+
+$routes->post('guardarImagen', 'Perfil::guardarImagen');
+

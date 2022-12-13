@@ -50,5 +50,8 @@ class CreadorSesiones extends Controller
         }
           
     }
+    public function actualizarImagen(){
+        
+    }
   
 }
