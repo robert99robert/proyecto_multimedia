@@ -118,7 +118,6 @@ class Home extends BaseController
         $datos['navbar2'] = view('template/navbar2');
         $datos['navbar'] = view('template/navbar');
         $datos['piepagina'] = view('template/piepagina');
-        $datos['graficoVacio'] = view('template/graficoVacio');
         return view('resultado',$datos);
     }
 }

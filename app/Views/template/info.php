@@ -1,6 +1,6 @@
 
 
-<div class="container mt-1">
+<div class="container mt-1" style="border: thick double #32a1ce;">
   <div class="row" style="background-color:#f0f5f5" >
     <div class="col-sm-6" style="background-color: white">
       <h2><a href=""></a></h2>

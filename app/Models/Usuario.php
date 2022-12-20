@@ -14,7 +14,7 @@ class Usuario extends Model
     /*protected $returnType     = 'array';
     protected $useSoftDeletes = true;*/
 
-protected $allowedFields = ['email', 'password','name','tipo_usuario','estado','created_at'];
+protected $allowedFields = ['email', 'password','name','tipo_usuario','estado','created_at','foto'];
 
     /*protected $useTimestamps = false;
     protected $createdField  = 'created_at';

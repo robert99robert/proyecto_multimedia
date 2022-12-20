@@ -16,15 +16,22 @@
 
   <div class="col-sm-6">
     <br>
+    <?php if($session->get('foto')==null):?>
       <h5 class="card-title">¿Desea ingresar una imagen?</h5>
+      <?php endif;?>
         <p class="card-text">
+        <?php if($session->get('foto')!=null):?>
+        <img src="<?=base_url()?>/perfiles/<?=$usuario['foto'];?>" width="100" height="100">
+        <?php else: ?>
         <form method="post" action="<?=site_url('guardarImagen')?>" enctype="multipart/form-data">
       <div class="form_group">
             <input id="imagen" class="form-control-file" type="file" name="imagen">
       </div>
+      <input type="hidden" name="id" value="<?=$session->get('id')?>">
         <br>
         <button class="btn btn-success" type="submit">Guardar</button>
       </form>
+      <?php endif;?>
     </p>
   </div>
 </div>
